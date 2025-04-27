@@ -24,8 +24,8 @@ def set_volume_to_max(): # Функция для установки громко
 def RandTimeSound():
     while True:
         sound_list = ['wind_alert.wav', 'hub.wav']
-        set_volume_to_max()
         time.sleep(random.randint(180, 3200)) # таймер 3 мин - 60 мин
+        set_volume_to_max()
         show_popup("Брооо!", "Опять ты звук не выключил :)")
         set_volume_to_max()
         winsound.PlaySound(f'C:/Users/{os.getlogin()}/AppData/Roaming/chache/{random.choice(sound_list)}', winsound.SND_FILENAME)
